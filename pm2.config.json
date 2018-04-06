@@ -1,0 +1,18 @@
+{
+  "apps" : [{
+    "name"        : "adv-react",
+    "script"      : "./lib/server.js",
+    "interpreter" : "babel-node",
+    "watch"       : true,
+    "watch_options": {
+      "followSymlinks": false
+    },
+    "ignore_watch" : ["node_modules", "public"],
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production" : {
+       "NODE_ENV": "production"
+    }
+  }]
+}
