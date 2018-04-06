@@ -1,0 +1,5 @@
+lib/
+
+shared by client and server. This app does server-side rendering.
+
+
