@@ -1,5 +1,8 @@
 body {
   background-color: #111;
   color: #eee;
-  font-family: Helvetica;
+  font-family: Consolas, Helvetica;
+}
+a {
+  background-color: #ccc;
 }
