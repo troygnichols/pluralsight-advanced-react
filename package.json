@@ -4,9 +4,28 @@
   "main": "lib/server.js",
   "author": "Troy Nichols",
   "license": "MIT",
+  "scripts": {
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "pm2": "^2.10.2"
   }
 }
