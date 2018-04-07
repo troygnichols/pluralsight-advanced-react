@@ -5,7 +5,7 @@
   "author": "Troy Nichols",
   "license": "MIT",
   "scripts": {
-    "dev": "pm2 startOrRestart pm2.config.json && pm2 logs",
+    "dev": "NODE_PATH='./lib' pm2 startOrRestart pm2.config.json && pm2 logs",
     "webpack": "webpack -wd",
     "test": "jest --watch"
   },
