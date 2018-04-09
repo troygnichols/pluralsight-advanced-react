@@ -35,7 +35,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Article
+        <ArticleContainer
           article={
             Object {
               "body": "Fake body",
@@ -45,7 +45,7 @@ ShallowWrapper {
             }
           }
         />,
-        <Article
+        <ArticleContainer
           article={
             Object {
               "body": "Fake body",
@@ -62,7 +62,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "a",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "article": Object {
             "body": "Fake body",
@@ -78,7 +78,7 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": "b",
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
           "article": Object {
             "body": "Fake body",
@@ -101,7 +101,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Article
+          <ArticleContainer
             article={
               Object {
                 "body": "Fake body",
@@ -111,7 +111,7 @@ ShallowWrapper {
               }
             }
           />,
-          <Article
+          <ArticleContainer
             article={
               Object {
                 "body": "Fake body",
@@ -128,7 +128,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "a",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "article": Object {
               "body": "Fake body",
@@ -144,7 +144,7 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": "b",
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
             "article": Object {
               "body": "Fake body",
