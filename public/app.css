@@ -3,6 +3,11 @@ body {
   color: #eee;
   font-family: Consolas, Helvetica;
 }
+
+#root {
+  margin: .2em 1em;
+}
+
 a {
   background-color: #ccc;
 }
