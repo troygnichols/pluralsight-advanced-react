@@ -5,8 +5,9 @@
   "author": "Troy Nichols",
   "license": "MIT",
   "scripts": {
-    "server-dev": "NODE_PATH='./lib' pm2 startOrRestart pm2.config.json",
-    "server-prod": "babel lib -d build --copy-files",
+    "server-dev": "PORT='8181' NODE_PATH='./lib' pm2 startOrRestart pm2.config.json",
+    "server-build-prod": "babel lib -d build --copy-files",
+    "server-run-prod": "NODE_ENV=production NODE_PATH=./build pm2 start build/server.js -i max --name advReactProd",
     "server-down": "pm2 kill",
     "web-dev": "webpack -wd",
     "web-prod": "webpack -p",

@@ -25,7 +25,16 @@ const config = {
   },
   module: {
     rules: [
-      {test: /\.js/, exclude: /node_modules/, use: 'babel-loader'}
+      {
+        test: /\.js/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['react', 'env', 'stage-2']
+          }
+        }
+      }
     ]
   },
   optimization: {
