@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "NODE_PATH='./lib' pm2 startOrRestart pm2.config.json && pm2 logs",
-    "webpack": "webpack -wd",
+    "build": "webpack -d",
+    "web": "webpack -wd",
     "test": "jest --watch",
     "cover": "jest --coverage"
   },
