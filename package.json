@@ -5,17 +5,25 @@
   "author": "Troy Nichols",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_PATH='./lib' pm2 startOrRestart pm2.config.json && pm2 logs",
-    "build": "webpack -d",
-    "web": "webpack -wd",
-    "test": "jest --watch",
-    "cover": "jest --coverage"
+    "server-dev": "NODE_PATH='./lib' pm2 startOrRestart pm2.config.json",
+    "server-prod": "babel lib -d build --copy-files",
+    "server-down": "pm2 kill",
+    "web-dev": "webpack -wd",
+    "web-prod": "webpack -p",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-cover": "jest --coverage"
   },
   "babel": {
     "presets": [
       "react",
-      "env",
-      "stage-2"
+      ["env", {
+        "targets": {"node": "current"}
+      }]
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread"
     ]
   },
   "devDependencies": {

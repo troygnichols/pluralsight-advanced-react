@@ -2,3 +2,4 @@ public/app.js
 public/vendor.js
 yarn-error.log
 /coverage
+/build
